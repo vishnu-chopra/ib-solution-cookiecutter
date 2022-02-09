@@ -1,0 +1,13 @@
+{
+  "name" : "my_ib_package",
+  "version" : "0.0.1",
+  "icon_url" : "None",
+  "keywords" : "None",
+  "category": "None",
+  "short_description": "None",
+  "long_description": "None",
+  "authors": "Instabase",
+  "beta": true,
+  "solution_type": ["ibflowbin","pkpkg"],
+  "encryption_type": ["large_files","v1"]
+}
