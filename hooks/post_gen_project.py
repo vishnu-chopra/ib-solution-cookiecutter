@@ -26,7 +26,7 @@ def write_package_config():
   config = {
       "name": "{{cookiecutter.name}}",
       "version": "{{cookiecutter.version}}",
-      "icon_url": "icon.png" if "{{cookiecutter.icon_url}}"!="" else None,
+      "icon_url": "icon.png" if "{{cookiecutter.icon_url}}" != "" else None,
       "keywords": "{{cookiecutter.keywords}}",
       "category": "{{cookiecutter.category}}",
       "short_description": "{{cookiecutter.short_description}}",
@@ -38,7 +38,7 @@ def write_package_config():
   }
 
   refined_config = refine_config(config)
-  with open(os.path.join(os.path.join(os.getcwd(), "solution"), "package.json"), "w") as file:
+  with open(os.path.join(os.getcwd(), "package.json"), "w") as file:
     file.write(json.dumps(config))
 
 

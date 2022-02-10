@@ -8,6 +8,6 @@
   "long_description": "",
   "authors": "Instabase",
   "beta": true,
-  "solution_type": ["ibflowbin","pkpkg"],
+  "solution_type": ["ibflowbin","pypkg"],
   "encryption_type": ["large_files","v1"]
 }

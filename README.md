@@ -23,7 +23,7 @@ authors [Instabase]: Instabase, IB, CS # Comma separated list of strings
 beta [True]: 
 Select solution_type:
 1 - ibflowbin
-2 - pkpkg
+2 - pypkg
 Choose from 1, 2 [1]: 2
 Select encryption_type:
 1 - large_files
@@ -69,7 +69,7 @@ and generate the corresponding `solution/package.json`
         "CS"
     ],
     "beta": true,
-    "solution_type": "pkpkg",
+    "solution_type": "pypkg",
     "encryption_config": {
         "encryption_type": "large_files"
     }
