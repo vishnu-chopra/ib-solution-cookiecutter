@@ -38,7 +38,7 @@ def write_package_config():
   }
 
   refined_config = refine_config(config)
-  with open(os.path.join(os.getcwd(), "package.json"), "w") as file:
+  with open(os.path.join(os.path.join(os.getcwd(), "solution"), "package.json"), "w") as file:
     file.write(json.dumps(config))
 
 
