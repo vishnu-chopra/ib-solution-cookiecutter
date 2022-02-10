@@ -14,7 +14,7 @@ This should begin the CLI to setup the project
 ```sh
 name [my_ib_package]: # Your package name should align with IB package naming conventions
 version [0.0.1]: 0.2.1
-icon_url [None]: icon.png # Required only when `"solution_type": "ibflowbin"`, always `"icon.png"`
+icon_url [None]: /Users/vishnuchopra/dev/something.png # Required only when `"solution_type": "ibflowbin"`, always `"icon.png"` . Provide the absolute path.
 keywords [None]: testing, test  # Comma separated list of strings 
 category [None]: banking 
 short_description [None]: description
@@ -39,16 +39,17 @@ This should generate the skeleton of the project
 .
 └── solution
     ├── __init__.py
+    ├── icon.png
     ├── package.json
     ├── readme.md
     ├── src
-    │   ├── __init__.py
-    │   └── my_ib_package.py
+    │   ├── __init__.py
+    │   └── my_ib_package.py
     └── test
         ├── __init__.py
         └── test_my_ib_package.py
 
-3 directories, 7 files
+3 directories, 8 files
 ```
 
 and generate the corresponding `solution/package.json`

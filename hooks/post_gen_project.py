@@ -5,7 +5,7 @@ import shutil
 
 def refine_config(config):
   for key in config.keys():
-    if config[key] == "None":
+    if config[key] == "":
       config[key] = None
 
   if config["authors"] != None:
@@ -26,7 +26,7 @@ def write_package_config():
   config = {
       "name": "{{cookiecutter.name}}",
       "version": "{{cookiecutter.version}}",
-      "icon_url": "{{cookiecutter.icon_url}}",
+      "icon_url": "icon.png" if "{{cookiecutter.icon_url}}"!="" else None,
       "keywords": "{{cookiecutter.keywords}}",
       "category": "{{cookiecutter.category}}",
       "short_description": "{{cookiecutter.short_description}}",
@@ -44,7 +44,7 @@ def write_package_config():
 
 def copy_over_files():
   icon_url = "{{cookiecutter.icon_url}}"
-  if icon_url != "None":
+  if icon_url != "":
     if not os.path.isfile(icon_url):
       print(f"WARNING: No file {icon_url} exists, not copying to icon.png")
     shutil.copyfile(icon_url, os.path.join(
